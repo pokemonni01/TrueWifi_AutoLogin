@@ -5,15 +5,17 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
         /* Call the specified callback, passing 
         the web-pages DOM content as argument */
         sendResponse(document.getElementById("mybutton"));
-        var userName = document.getElementById("txtUsername");
-        userName.value = "pokemonni01";
+        var userName = document.getElementById("username");
+        userName.value = "0997724131";
         var inputs = document.getElementsByTagName('input');
 
         for(var i = 0; i < inputs.length; i++) {
         	if(inputs[i].type.toLowerCase() == 'password') {
-        		inputs[i].value = "beb8ba"
+        		inputs[i].value = "001934"
         	}
         }
+        var button = document.getElementById("confirm");
+        button.click();
     }
 
     if (msg.text && (msg.load == "complete")) {

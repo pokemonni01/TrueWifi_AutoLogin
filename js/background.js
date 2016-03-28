@@ -20,7 +20,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 
 chrome.tabs.query({index: 0},function(tab){
 	console.log(tab[0]);
-	chrome.tabs.update(tab[0].id, {url: "http://siamfishing.com/loginpage.php"});
+	chrome.tabs.update(tab[0].id, {url: "https://portal.trueinternet.co.th/wifiauthen/web/wifi-login.php"});
 	chrome.tabs.executeScript(0, {code: "chrome.extension.sendRequest({content: document.body.innerHTML}, function(response) { console.log('success'); });",file: ["js/script.js","js/jquery-2.2.2.min.js"] }, function(callBack){
 
 	});
