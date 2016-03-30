@@ -13,6 +13,7 @@
   "permissions": [
     "tabs",
     "downloads",
+    "activeTab",
     "storage",
     "http://*/*",
     "https://*/*"
